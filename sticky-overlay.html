@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <style>
+      body{
+        background-color:white;
+      }
       #scrolly {
         position: relative;
-        background-color: #f3f3f3;
+        background-color:white;
         padding: 1rem;
       }
 
@@ -54,7 +57,7 @@
       }
 
       .step.is-active p {
-        background-color: goldenrod;
+        background-color:white;
         color: #3b3b3b;
       }
 
@@ -63,27 +66,23 @@
         padding: 1rem;
         font-size: 1.5rem;
         background-color: #3b3b3b;
+
+      .flourish-chart {
+          width: 100%;
+        }
       }
     </style>
   </head>
 
   <body>
     <main>
-      <nav>
-        <a href="https://github.com/russellgoldenberg/scrollama">scrollama.js</a>
-        <div class="nav__examples">
-          <p>Examples:</p>
-          <a href="basic.html">Basic</a>
-          <a href="progress.html">Progress</a>
-          <a href="sticky-side.html">Sticky Side</a>
-          <a href="sticky-overlay.html">Sticky Overlay</a>
-        </div>
-      </nav>
+
       <section id="intro">
-        <h1 class="intro__hed">Sticky Overlay Example</h1>
+        <h1 class="intro__hed">Firearm licenses requests increase in Brazil after changes in law</h1>
         <p class="intro__dek">
-          Start scrolling to see how it works.
+          Elected in <b>2018</b>, the president Jair Bolsonaro softened firearms regulations and citizens requests for weapons licenses have reached its peak since then.
         </p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/6952459"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
       </section>
 
       <section id="scrolly">
@@ -93,21 +92,28 @@
 
         <article>
           <div class="step" data-step="1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Amid coup threats against the electoral system, Brazil reaches a record of new firearm licenses issued.</p>
           </div>
           <div class="step" data-step="2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Using official data requests, a new analysis reveals that Brazilian citizens requests for firearm licenses reached its peak recently.</p>
+            <p>In 2020, the National Weapons System in Brazil (SINARM) received XX requests from citizens asking for firearm licenses. </p>
           </div>
           <div class="step" data-step="3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+            <p>The political crisis in Brazil is escalating quickly. Last week, Bolsonaro argued against the countries major electoral court, claiming that he could overpass constitutional laws and use arms if defeated in the next year's election.</p>
+            <p>The flexibilization of weapons laws was one of the main promises in Bolsonaro's last political campaign.</p>          </div>
           <div class="step" data-step="4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The political crisis in Brazil is escalating quickly. Last week, Bolsonaro argued against the countries major electoral court, claiming that he could overpass constitutional laws and use arms if defeated in the next year's election.</p>
+            <p>The flexibilization of weapons laws was one of the main promises in Bolsonaro's last political campaign.</p>
+          </div>
+          <div class="step" data-step="5">
+
           </div>
         </article>
       </section>
 
-      <section id="outro"></section>
+      <section id="outro">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/6952310"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </section>
     </main>
 
     <!-- <div class='debug'></div> -->
@@ -145,8 +151,8 @@
         scroller
           .setup({
             step: "#scrolly article .step",
-            offset: 0.33,
-            debug: true
+            offset: 0.5,
+            debug: false
           })
           .onStepEnter(handleStepEnter);
 
