@@ -14,6 +14,7 @@ body {
   min-height: 1280px;
   color: #3b3b3b;
   font-size: 24px;
+  background-color: aliceblue;
 }
 
 p,
@@ -23,7 +24,9 @@ h3,
 h4,
 a {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 3rem;
 }
 
 a,
@@ -86,11 +89,11 @@ nav {
 }
 
 #intro {
-  margin-bottom: 320px;
+  margin-bottom: 10rem;
 }
 
 #outro {
-  height: 640px;
+  height: 30rem;
 }
 
 @media (min-width: 840px) {
