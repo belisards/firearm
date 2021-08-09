@@ -75,7 +75,6 @@
 
       #intro img{
         width: 40rem;
-        margin-top:2rem;
       }
 
       .linechart{
@@ -85,17 +84,15 @@
       footer {
         line-height: 2rem;
         margin-left: 2rem;
-      }
-
-      .subtitle   {
         font-weight: lighter;
       }
 
-      #intro img{
-        margin-bottom: 2rem;
+      .subtitle{
+        font-style: italic;
       }
-      .intro__dek p{
-        font-weight: lighter;
+      .image-desc{
+        font-size:0.9rem;
+        margin-top:2rem;
       }
 
     </style>
@@ -106,28 +103,33 @@
       <section id="intro">
         <h1 class="intro__hed">Brazilians take up arms</h1>
         <p class="intro__dek">
-          <p class="subtitle">After regulatory changes made by the president Jair Bolsonaro, requests for weapon licenses increase drastically in Brazil.</p>
-        <img src="coisaruim.jpeg">
+          <p class="subtitle">Boosted by the president. Brazil reaches its record of weapons licenses issued for citizens in June.</p>
+        <div class="corpus">
+          <img src="coisaruim.jpeg">
+          <p class="image-desc">(Image source: Jair Bolsonaro's profile in Facebook)</p>
         <p>The political crisis in Brazil is escalating quickly.</p>
-        <p>Last week, the far-right president Jair Bolsonaro attacked the major electoral court, claiming that he could overpass constitutional laws and use arms if defeated in the next year's election. Apprehensions regarding a tropical “Capitol attack” in the country's capital Brasília spread among political analysts. </p>
-        <p>Bolsonaro is well-known for its relations with police militias, and during his electoral campaign promised to arm the population. There have been many changes, indeed. Currently, every Brazilian can have up to 6 (or even 8 in some cases) firearms. It is also easier to request and get a weapon license due to regulatory changes.</p>
-        <p>But how these changes affect the requests for new licenses?</p>
+        <p>Last week, the far-right president Jair Bolsonaro attacked the major electoral court, claiming that he could overpass constitutional laws and use arms if defeated in the next year's election. Apprehensions regarding a <b>tropical “Capitol attack”</b> in the country's capital Brasília spread among political analysts. </p>
+        <p>Bolsonaro is well-known for its relations with <b>police militias</b>, and during his electoral campaign promised to arm the population. There have been many changes, indeed. </p><p>Currently, every Brazilian can have up to 6 (or even 8 in some cases) firearms. It is also easier to request and obtain a firearm license due to regulatory changes.</p>
+        <p>But did the issuance of licenses really increase in his government? How much? </p></div>
       </section>
 
       <section id="scrolly">
         <article>
           <div class="step" data-step="1">
-            <p>According to this new analysis, the number of new weapon licenses issued increased drastically since Bolsonaro's election. The National Weapons System (SINARM) doesn't publish open data regularly</p>
-            <p>However, due to the Brazil's Information Access Law (like the FOIA in U.S.), the Federal Police have been providing tables with aggregated numbers by state, category and month, from 2009 to June 2021</p>
+            <p>The amount of <b>new weapon licenses</b> issued increased drastically since Bolsonaro's election. During the three years and a half of his administration, the total of weapon licenses issued for citizens was <b>equivalent to those of the last 9 years</b> summed up. </p>
+              <p>Between 2019 and June 2021, the Federal Police counts <b>251,829 new licenses</b>. From 2009 to 2018, the time series shows about 240 thousands.</p>
+
           </div>
           <div class="step" data-step="2">
-            <p>Military forces don't use this same system, but the regional public security administration do. While there is an increase both in licenses for individuals and governmental agencies, last year the gap between both increased even more.</p>
-            <p>Licenses for citizen increased 57% from 2019 to 2020. Categories associated with the public administration had an increase of only 9%.</p>   
+            <p>Military forces don't use this same system, but the regional public security administration do. While there is an increase both in licenses for individuals and governmental agencies, last year the gap between both widened even more.</p>
+              <p><b>Licenses for citizen surged 57%</b> from 2019 to 2020. Categories associated with the <b>public administration increased only 9%</p>   
           </div>
           <div class="step" data-step="3">
-           <p> During the three years and a half of Bolsonaro's administration as president, the amount of weapon licenses issued for citizens was equivalent to those of the last 9 years summed up.</p>
-            <p> Between 2019 and June 2021, the Federal Police counts 251,829 new licenses. From 2009 to 2018, the time series shows 240,917 registers.</p>
+            <p>There is also a consistent increase recently. Last June, the system register <b>14,210 new licenses — a historical record</b>.</p>
+            <p>The government doesn't publish open data regularly, however, due to the Brazil's Information Access Law (like the FOIA in U.S.), the Federal Police have been providing aggregated data from the National Weapons System (SINARM) by state, category and month, covering the period between 2009 and June 2021</p>
+
           </div>
+
         </article>
 
         <div class="sticky-thing">
@@ -141,12 +143,16 @@
       <div>
    
     </div>
-      <section id="outro"></section>
+      <section id="outro">
+      </section>
     </main>
     <footer>
+      <hr>
+      <p>🚧 Work In Progress</p>
+      <p> All sources and code are available in the Github repository below. Go ahead and explore the data in detail.</p>
+
       <p><b>by Adriano Belisario - <a href="https://twitter.com">@belisards</a></b></p>
-      <p>Code and data: <a href="https://github.com/belisards/weapons_br">https://github.com/belisards/weapons_br</p></a>
-      <p>Image source: Jair Bolsonaro's profile in Facebook</p>
+      <p><a href="https://github.com/belisards/weapons_br">https://github.com/belisards/weapons_br</p></a>
       </footer>
     <!-- <div class='debug'></div> -->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
